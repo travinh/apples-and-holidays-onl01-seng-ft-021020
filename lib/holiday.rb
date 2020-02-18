@@ -86,7 +86,7 @@ def all_supplies_in_holidays(holiday_hash)
             temp_string << "#{item}, "
           end
         end
-        
+        puts temp_string
       end
     end
   end
