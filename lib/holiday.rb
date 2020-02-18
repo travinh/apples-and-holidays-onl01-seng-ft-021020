@@ -69,8 +69,8 @@ def all_supplies_in_holidays(holiday_hash)
       temp_string = ""
       temp_holiday = holiday.to_s
       if temp_holiday.include?("_")
-        puts temp_holiday
         string_array = temp_holiday.split("_")
+        puts string_array
         i=0 
         while i<string_array.length do
           temp_string << string_array[i].capitalize
