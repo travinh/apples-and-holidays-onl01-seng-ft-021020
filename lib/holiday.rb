@@ -68,14 +68,14 @@ def all_supplies_in_holidays(holiday_hash)
     event.each do |holiday,supply|
       temp_string = ""
       temp_holiday = holiday.to_s
-      if temp_holiday.length >1 
-        string_array = temp_holiday.split("_")
-        i=0 
-        while i<string_array.length do
-          temp_string << string_array[i].capitalize
-          i+=1
-        end
-      else
+      # if temp_holiday.length >1 
+      #   string_array = temp_holiday.split("_")
+      #   i=0 
+      #   while i<string_array.length do
+      #     temp_string << string_array[i].capitalize
+      #     i+=1
+      #   end
+      # else
         temp_string << "  #{temp_holiday.capitalize}: "
         supply.each do |item|
           if item == supply.last
@@ -85,7 +85,7 @@ def all_supplies_in_holidays(holiday_hash)
           end
         end
         puts temp_string
-      end
+      #end
     end
   end
 
