@@ -68,6 +68,7 @@ def all_supplies_in_holidays(holiday_hash)
     event.each do |holiday,supply|
       temp_string = ""
       temp_holiday = holiday.to_s
+      puts temp_holiday
       if temp_holiday.include?("_")
         string_array = temp_holiday.split("_")
         i=0 
