@@ -75,7 +75,8 @@ def all_supplies_in_holidays(holiday_hash)
           string_array[i] = string_array[i].capitalize
           i+=1
         end
-        puts string_array
+        temp_string = string_array.join(" ")
+        puts temp_string
         
       else
         temp_string << "  #{temp_holiday.capitalize}: "
