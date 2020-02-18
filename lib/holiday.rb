@@ -66,7 +66,7 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, event|
     puts "#{season.capitalize}:"
     event.each do |holiday,supply|
-      temp_string = ""
+      temp_string = "\t"
       temp_holiday = holiday.to_s
       if temp_holiday.include?("_")
         string_array = temp_holiday.split("_")
@@ -75,8 +75,7 @@ def all_supplies_in_holidays(holiday_hash)
           string_array[i] = string_array[i].capitalize
           i+=1
         end
-        temp_string = string_array.join(" ")
-        puts temp_string
+        temp_string = temp_string + string_array.join(" ")
         
       else
         temp_string << "  #{temp_holiday.capitalize}: "
