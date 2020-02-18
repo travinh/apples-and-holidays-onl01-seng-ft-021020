@@ -68,9 +68,8 @@ def all_supplies_in_holidays(holiday_hash)
     event.each do |holiday,supply|
       temp_string = ""
       temp_holiday = holiday.to_s
-      if temp_holiday.include? "_"
+      if temp_holiday.include?("_")
         string_array = temp_holiday.split("_")
-        binding.pry
         i=0 
         while i<string_array.length do
           temp_string << string_array[i].capitalize
