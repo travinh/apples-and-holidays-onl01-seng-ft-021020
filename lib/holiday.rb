@@ -76,7 +76,7 @@ def all_supplies_in_holidays(holiday_hash)
           i+=1
         end
         temp_string = temp_string + string_array.join(" ")
-        
+        puts temp_string
       else
         temp_string << "  #{temp_holiday.capitalize}: "
         supply.each do |item|
